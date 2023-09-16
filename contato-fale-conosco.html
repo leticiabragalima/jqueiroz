@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>J.Queiroz | Engenharia de Mobilidade Urbana</title>
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <link rel="icon" href="logo_raio.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <!-------------------------- CABEÇALHO -------------------------->
+    <header>
+        <div class="logo" href="home.html">
+            <a href="home.html">
+                <img src="logo_eng.png" alt="Logo da Empresa">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="home.html">HOME</a></li>
+                <li class="dropdown">
+                    <a href="#">SOBRE</a>
+                    <div class="dropdown-content">
+                        <a href="#">A EMPRESA</a>
+                        <a href="#">MISSÃO, VISÃO E VALORES</a>
+                        <a href="#">EQUIPAMENTOS</a>
+                    </div>
+                </li>
+                <li><a href="#servicos">SERVIÇOS</a></li>
+                <li><a href="#clientes">CLIENTES</a></li>
+                <li class="dropdown">
+                    <a href="#">CONTATO</a>
+                    <div class="dropdown-content">
+                        <a href="contato-fale-conosco.html">FALE CONOSCO</a>
+                        <a href="contato-trabalhe-conosco">TRABALHE CONOSCO</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-------------------------- CONTEÚDO DA PÁGINA -------------------------->
+    <div class="gray-banner">
+        <h1>FALE CONOSCO</h1>
+        <p>Preencha o formulário abaixo. Nosso time de atendimento está pronto para entrar em contato com você e tirar
+            todas as suas dúvidas.</p>
+    </div>
+
+    <!-- <div class="formulario">
+        <form action="processar_formulario.php" method="POST">
+            <div class="coluna">
+                <h2>ENDEREÇO</h2>
+                <p>Endereço completo</p>
+                <h2>EMAIL</h2>
+                <p>NOME@EXEMPLO.COM</p>
+                <h2>ENDEREÇO</h2>
+                <p>(00)00000-0000</p>
+            </div>
+            <div class="clear"></div> 
+
+            <div class="coluna">
+                <div class="sub-coluna">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+                <div class="sub-coluna">
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone" required>
+                </div>
+                <div class="sub-coluna">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="sub-coluna">
+                    <label for="assunto">Assunto:</label>
+                    <input type="text" id="assunto" name="assunto" required>
+                </div>
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+                <button type="submit">ENVIAR</button>
+            </div>
+            <div class="clear"></div> 
+        -->
+
+    <div class="formulario">
+        <form action="processar_formulario.php" method="POST">
+            <div class="coluna">
+                <h2>ENDEREÇO</h2>
+                <p>Endereço completo</p>
+                <h2>EMAIL</h2>
+                <p>NOME@EXEMPLO.COM</p>
+                <h2>ENDEREÇO</h2>
+                <p>(00)00000-0000</p>
+            </div>
+
+            <div class="coluna">
+                <div class="linha">
+                    <div class="sub-coluna">
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" required>
+                    </div>
+                    <div class="sub-coluna">
+                        <label for="telefone">Telefone:</label>
+                        <input type="tel" id="telefone" name="telefone" required>
+                    </div>
+                </div>
+
+                <div class="linha">
+                    <div class="sub-coluna">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="sub-coluna">
+                        <label for="assunto">Assunto:</label>
+                        <input type="text" id="assunto" name="assunto" required>
+                    </div>
+                </div>
+
+                <div class="linha">
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+                </div>
+
+                <div class="linha">
+                    <button type="submit">ENVIAR</button>
+                </div>
+
+            </div>
+            <div class="clear"></div>
+
+        </form>
+
+
+
+
+        <!-------------------------- RODAPÉ -------------------------->
+        <footer>
+            <div class="footer-logo">
+                <!-- Inserir a logo da empresa aqui -->
+                <img src="logo_eng.png" alt="Logo da J.Queiroz">
+            </div>
+            <div class="divider-line"></div>
+            <div class="footer-info">
+                <!-- Coluna do endereço -->
+                <div class="column-left">
+                    Endereço: Av. Exemplo, 123 - Cidade - Estado
+                </div>
+                <!-- Coluna do telefone, email e ícones -->
+                <div class="footer-contacts column-right">
+                    <div class="contact-info">Telefone: (11) 1234-5678</div>
+                    <div class="contact-info">Email: contato@example.com</div>
+                    <div class="social-icons .column-right">
+                        <!-- Inserir os ícones do Instagram e LinkedIn aqui com os links corretos -->
+                        <a href="https://www.instagram.com/seu_instagram" target="_blank">
+                            <img src="instagram-icon.png" alt="Instagram">
+                        </a>
+                        <a href="https://www.linkedin.com/seu_linkedin" target="_blank">
+                            <img src="linkedin-icon.png" alt="LinkedIn">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-developed-by">
+                2023 J.Queiroz – Desenvolvido por Leticia Lima
+            </div>
+        </footer>
+</body>
+
+</html>

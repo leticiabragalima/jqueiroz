@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>J.Queiroz | Engenharia de Mobilidade Urbana</title>
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <link rel="icon" href="logo_raio.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+<!-------------------------- CABEÇALHO -------------------------->
+    <header>
+        <div class="logo" href="home.html">
+            <a href="home.html">
+                <img src="logo_eng.png" alt="Logo da Empresa">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="home.html">HOME</a></li>
+                <li class="dropdown">
+                    <a href="#">SOBRE</a>
+                    <div class="dropdown-content">
+                        <a href="#">A EMPRESA</a>
+                        <a href="#">MISSÃO, VISÃO E VALORES</a>
+                        <a href="#">EQUIPAMENTOS</a>
+                    </div>
+                </li>
+                <li><a href="#servicos">SERVIÇOS</a></li>
+                <li><a href="#clientes">CLIENTES</a></li>
+                <li class="dropdown">
+                    <a href="#">CONTATO</a>
+                    <div class="dropdown-content">
+                        <a href="contato-fale-conosco.html">FALE CONOSCO</a>
+                        <a href="contato-trabalhe-conosco">TRABALHE CONOSCO</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-------------------------- CONTEÚDO DA PÁGINA -------------------------->
+
+    <div id="video-container">
+        <!-- Inserir seu vídeo aqui -->
+        <video src="bg_video.mp4" autoplay loop muted></video>
+        <!-- Sobreposição de gradiente apenas sobre o vídeo -->
+        <div class="video-gradient-overlay"></div>
+        <div class="gradient"></div>
+    </div>
+
+    <div id="overlay-text">Engenharia de<BR>Mobilidade Urbana</div>
+
+    <a href="#conteudo" class="saiba-mais" onclick="scrollParaDiv('container')">SAIBA MAIS</a>
+
+    <script>
+        // Função para rolar suavemente para a próxima div
+        function scrollParaDiv(conteudo) {
+            var destino = document.getElementById(conteudo);
+            window.scrollTo({
+                top: destino.offsetTop,
+                behavior: "smooth"
+            });
+        }
+    </script>
+
+ <!-- <div class="container positioned-box" id="conteudo">
+        <div class="box">
+            <img src="eng.jpg" alt="Imagem 1">
+            <p>ENGENHARIA</p>
+            <div class="divider-line-box"></div>
+        </div>
+        <div class="box">
+            <img src="iproj.jpg" alt="Imagem 2">
+            <p>PROJETOS</p>
+            <div class="divider-line-box"></div>
+        </div>
+        <div class="box">
+            <img src="auto.jpg" alt="Imagem 3">
+            <p>AUTOMAÇÃO</p>
+            <div class="divider-line-box"></div>
+        </div>
+    </div> -->
+
+    <!-------------------------- RODAPÉ -------------------------->
+    <footer>
+        <div class="footer-logo">
+            <!-- Inserir a logo da empresa aqui -->
+            <img src="logo_eng.png" alt="Logo da J.Queiroz">
+        </div>
+        <div class="divider-line"></div>
+        <div class="footer-info">
+            <!-- Coluna do endereço -->
+            <div class="column-left">
+                Endereço: Av. Exemplo, 123 - Cidade - Estado
+            </div>
+            <!-- Coluna do telefone, email e ícones -->
+            <div class="footer-contacts column-right">
+                <div class="contact-info">Telefone: (11) 1234-5678</div>
+                <div class="contact-info">Email: contato@example.com</div>
+                <div class="social-icons .column-right">
+                    <!-- Inserir os ícones do Instagram e LinkedIn aqui com os links corretos -->
+                    <a href="https://www.instagram.com/seu_instagram" target="_blank">
+                        <img src="instagram-icon.png" alt="Instagram">
+                    </a>
+                    <a href="https://www.linkedin.com/seu_linkedin" target="_blank">
+                        <img src="linkedin-icon.png" alt="LinkedIn">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-developed-by">
+            2023 J.Queiroz – Desenvolvido por Leticia Lima
+        </div>
+    </footer>
+</body>
+
+</html>

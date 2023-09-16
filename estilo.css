@@ -1,0 +1,343 @@
+<style>@font-face {
+    font-family: 'Montserrat', sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;700;900&display=swap') format('woff2');
+}
+
+
+/* Estilos gerais */
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: white;
+    /* Definir Montserrat como a fonte padrão */
+}
+
+/*----------------------------------------------------------- CABEÇALHO -----------------------------------------------------------*/
+header {
+    background-color: #000;
+    padding: 10px 100px 10px 10px;
+    /* Margens maiores no cabeçalho */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* Centralizar verticalmente os elementos no cabeçalho */
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    position: relative;
+    /* Adicionar a posição relativa para centralizar a caixa suspensa */
+}
+
+/* Estilos para a logo */
+.logo {
+    max-width: 250px;
+    /* Tamanho máximo da logo */
+}
+
+.logo img {
+    width: 100%;
+    height: auto;
+    padding-left: 20px;
+    /* Ajusta automaticamente a altura para manter a proporção */
+}
+
+/* Estilos para o menu */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 30px;
+    /* Espaçamento maior entre os itens do menu */
+}
+
+nav li {
+    display: inline-block;
+    position: relative;
+    /* Necessário para posicionar o menu suspenso */
+    padding: 15px;
+    /* Adicionar espaço interno (padding) para aumentar o espaçamento entre os itens */
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    /* Cor da fonte branca */
+    font-size: 12px;
+    /* Tamanho da fonte do cabeçalho */
+    letter-spacing: 4px;
+    transition: all 0.1s ease-in-out;
+    /* Efeito de transição suave para a mudança de cor e negrito */
+}
+
+nav a:hover {
+    font-weight: bold;
+    /* Texto em negrito ao passar o mouse */
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px) translateX(-50%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) translateX(-50%);
+    }
+}
+
+/*----------------------------------------------------------- MENU SUSPENSO */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 10px;
+    width: auto;
+    left: 50%;
+    transform: translateX(50%);
+    top: 100%;
+    /* Posicionar o menu suspenso abaixo do item do menu principal */
+    white-space: nowrap;
+    /* Impedir que o texto quebre em várias linhas */
+    z-index: 2;
+
+}
+
+.dropdown-content a {
+    display: block;
+    color: #fff;
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-align: center;
+    padding: 8px;
+    transition: all 0.3s ease;
+    /* Efeito de transição suave */
+
+}
+
+/* Mostrar o menu suspenso ao passar o mouse sobre o item do menu */
+nav li:hover .dropdown-content {
+    display: block;
+    animation: slideDown 0.3s forwards;
+
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/*----------------------------------------------------------- CONTATO - FALE CONOSCO -----------------------------------------------------------*/
+
+/* Styling for the gray banner */
+.gray-banner {
+    background-color: #D9D9D9;
+    /* Gray background color */
+    padding: 72px 330px;
+    /* Adjust the padding as needed */
+    text-align: center;
+}
+
+.gray-banner h1 {
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.gray-banner p {
+    font-size: 18px;
+    /* Font size for the description text */
+}
+
+.formulario {
+    width: 1440px;
+    height: 660px;
+    margin: 0 auto;
+    color: #000;
+    background-color: white;
+    padding: 20px;
+    justify-content: space-between;
+
+}
+
+.coluna {
+    width: auto;
+    float:right;
+    margin-right: 2%;
+    background-color: white;
+    padding: 10px;
+
+}
+
+
+
+.sub-coluna {
+    width: 50%;
+    float: left;
+    margin-right: 2%;
+    background-color: white;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.clear {
+    clear: both;
+}
+
+form {
+    max-width: 100%;
+    margin: 0 auto;
+    color: #000;
+    background-color: white;
+}
+
+label {
+    background-color: white;
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+textarea {
+    width: 50%;
+    float: left;
+    margin-right: 2%;
+    background-color: white;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+select,
+textarea {
+
+    width: 80%;
+    height: 25px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 0.5px solid #9c9c9c;
+    
+}
+
+textarea {
+    height: 150px;
+}
+
+button[type="submit"]{
+    background-color: #d9d9d9;
+    color: black;
+    font-size: 14px;
+    font-weight: 200;
+    width: 260px;
+    height: 40px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    display: block; 
+    margin: 0 auto; 
+}
+
+button[type="submit"]:hover {
+    background-color: #9c9c9c;
+} 
+
+
+
+
+/*----------------------------------------------------------- RODAPÉ -----------------------------------------------------------*/
+footer {
+    background-color: #000;
+    color: #fff;
+    /* Cor do texto branco */
+    padding: 80px 200px;
+}
+
+/* Estilos para a logo no rodapé */
+.footer-logo {
+    max-width: 250px;
+    /* Tamanho máximo da logo */
+}
+
+.footer-logo img {
+    width: 100%;
+    height: auto;
+    /* Ajusta automaticamente a altura para manter a proporção */
+}
+
+/* Estilos para a linha branca */
+
+.divider-line {
+    width: 100%;
+    height: 0.1px;
+    /* Linha mais fina */
+    background-color: #acacac;
+    /* Cor da linha branca */
+    margin: 50px auto;
+}
+
+/* Estilos para as informações abaixo da linha */
+.footer-info {
+    font-size: 14px;
+    display: flex;
+    /* Exibir as informações em linha */
+    justify-content: space-between;
+    /* Espaçamento igual entre as colunas */
+    align-items: flex-start;
+    /* Alinhar os elementos ao topo da coluna */
+    flex-wrap: wrap;
+    /* Quebra a linha se o conteúdo for muito grande */
+    margin: 50px auto;
+}
+
+/* Alinhar texto da coluna esquerda à esquerda */
+.footer-info .column-left {
+    text-align: left;
+}
+
+/* Alinhar texto da coluna direita à direita */
+.footer-info .column-right {
+    text-align: right;
+}
+
+/* Estilos para os ícones das redes sociais */
+.social-icons .column-right {
+    display: flex;
+}
+
+.social-icons img {
+    width: 25px;
+    /* Tamanho dos ícones */
+    height: auto;
+    /* Ajusta automaticamente a altura para manter a proporção */
+}
+
+/* Alterar a cor do ícone para branco ao passar o mouse sobre ele */
+.footer-info .social-icons img:hover {
+    filter: invert(60%);
+    /* Inverter a cor da imagem (para branco) */
+}
+
+/* Margens para espaçar os itens no rodapé */
+.footer-info div {
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+/* Estilos para o "Desenvolvido por" */
+.footer-developed-by {
+    color: #acacac;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+</style>
